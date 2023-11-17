@@ -1,14 +1,16 @@
 package boardgame;
 
+
+
 public class Position {
 	
 	private int row;
-	private int collum;
+	private int column;
 	
 	
 	public Position(int row, int collum) {
 		this.row = row;
-		this.collum = collum;
+		this.column = collum;
 	}
 	
 	
@@ -19,15 +21,21 @@ public class Position {
 		this.row = row;
 	}
 	public int getCollum() {
-		return collum;
+		return column;
 	}
 	public void setCollum(int collum) {
-		this.collum = collum;
+		this.column = collum;
+	}
+	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
 	}
 	
 	@Override
 	public String toString() {
-		return row + ", " + collum;
+		return row + ", " + column;
 	}
+	
 	
 }
